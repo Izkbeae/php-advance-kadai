@@ -13,6 +13,7 @@ try {
     // bindValue()メソッドを使って実際の値をプレースホルダにバインドする（割り当てる）
     $stmt_delete->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
 
+    
     // SQL文を実行する
     $stmt_delete->execute();
 
